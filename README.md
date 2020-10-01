@@ -7,6 +7,7 @@
 * Avant de démarrer l'application veuillez mettre à jour crée la base de donnée et renseigner les information de connection à au niveau de DataBase : ./suncorp/settings.py
 * Crée un environnement virtuel avec : virtualenv env  assurer vous d'abord d'installer virtualenv  avec pip install virtual env
 * Activer l'environnement virtuel avec source env/Scripts/activate
+* lancer pip install
 
 ##  CRUD API
 * `GET - http://localhost/citypod/categories/` Récuperer la liste des categorie
