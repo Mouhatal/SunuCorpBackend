@@ -41,7 +41,7 @@
 
 ###  PUB
 * `GET - http://localhost/citypod/pubs/` Récuperer la liste des pubs
-* `GET - http://localhost/pubbyname/?pageName=''` un enregistrement de pub selon le nom
+* `GET - http://localhost/pubbyname/?pubName=''` un enregistrement de pub selon le nom
 * `POST - http://localhost/addpub/` Insert un pub
 * `PUT - http://localhost/updatepage/?id=''` Mettre à jour un enregistrement de pub
 * `DELETE - http://localhost/deletepage/?id=''` Supprimer un enregistrement de pub
