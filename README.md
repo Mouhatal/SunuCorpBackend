@@ -23,15 +23,22 @@
 * `DELETE - http://localhost/deletesubcategory/?id=''` Supprimer un enregistrement de subcategory
 
 * `GET - http://localhost/citypod/elements/` Récuperer la liste des element
-* `GET - http://localhost/elementbyname/?elementName=''` un enregistrement de category selon le nom
+* `GET - http://localhost/elementbyname/?elementName=''` un enregistrement d'element selon le nom
 * `POST - http://localhost/addelement/` Insert un element
 * `PUT - http://localhost/updateelement/?id=''` Mettre à jour un enregistrement de element
 * `DELETE - http://localhost/deleteelement/?id=''` Supprimer un enregistrement de element
 
 
 * `GET - http://localhost/citypod/pages/` Récuperer la liste des page
-* `GET - http://localhost/pagebyname/?pageName=''` un enregistrement de category selon le nom
+* `GET - http://localhost/pagebyname/?pageName=''` un enregistrement de page selon le nom
 * `POST - http://localhost/addpage/` Insert un page
 * `PUT - http://localhost/updatepage/?id=''` Mettre à jour un enregistrement de page
 * `DELETE - http://localhost/deletepage/?id=''` Supprimer un enregistrement de page
+
+* `GET - http://localhost/citypod/pubs/` Récuperer la liste des pubs
+* `GET - http://localhost/pubbyname/?pageName=''` un enregistrement de pub selon le nom
+* `POST - http://localhost/addpub/` Insert un pub
+* `PUT - http://localhost/updatepage/?id=''` Mettre à jour un enregistrement de pub
+* `DELETE - http://localhost/deletepage/?id=''` Supprimer un enregistrement de pub
+
 
