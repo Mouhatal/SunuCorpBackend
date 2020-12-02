@@ -1,7 +1,7 @@
 from django.urls import path
 from django.conf.urls import url,include
 
-from citypod.views import viewsCategory,viewsSubCategory,viewsPage,viewsElement
+from citypod.views import viewsCategory,viewsSubCategory,viewsPage,viewsElement,viewsPublicite
 
 from rest_framework import routers
 
@@ -15,7 +15,7 @@ urlpatterns = [
     url(r'^deletecategory/(?P<pk>[0-9]+)/$',viewsCategory.CategoryDeleteView.as_view()),
     url(r'^categorybyname/(?P<categoryName>[a-zA-Z]+)/$',viewsCategory.CategoryByNameView.as_view()),
 
-     #uri subcategory
+      #uri subcategory
     url(r'^subcategories/$',viewsSubCategory.SubCategoryListView.as_view()),
     url(r'^addsubcategory/$',viewsSubCategory.SubCategoryCreateView.as_view()),
     url(r'^updatesubcategory/(?P<pk>[0-9]+)/$',viewsSubCategory.SubCategoryEditView.as_view()),
@@ -34,5 +34,12 @@ urlpatterns = [
     url(r'^page/$',viewsPage.PageCreateView.as_view()),
     url(r'^updatepage/(?P<pk>[0-9]+)/$',viewsPage.PageEditView.as_view()),
     url(r'^deletepage/(?P<pk>[0-9]+)/$',viewsPage.PageDeleteView.as_view()),
-    url(r'^pagebyname/(?P<pageName>[a-zA-Z]+)/$',viewsPage.PageByNameView.as_view())
+    url(r'^pagebyname/(?P<pageName>[a-zA-Z]+)/$',viewsPage.PageByNameView.as_view()),
+
+      #uri page
+    url(r'^pubs/$',viewsPublicite.PubliciteListView.as_view()),
+    url(r'^pub/$',viewsPublicite.PubliciteCreateView.as_view()),
+    url(r'^updatepub/(?P<pk>[0-9]+)/$',viewsPublicite.PubliciteEditView.as_view()),
+    url(r'^deletepub/(?P<pk>[0-9]+)/$',viewsPublicite.PubliciteDeleteView.as_view()),
+    url(r'^pubbyname/(?P<pubName>[a-zA-Z]+)/$',viewsPublicite.PubliciteByNameView.as_view())
 ]

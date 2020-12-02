@@ -22,3 +22,8 @@ class PageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Page
         fields= '__all__'
+
+class PubliciteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Page
+        fields= '__all__'
